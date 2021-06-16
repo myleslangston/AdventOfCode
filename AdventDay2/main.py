@@ -10,8 +10,7 @@ for line in num:  # break list up into further lists
         data = char.replace('\n', '')
         data = list(data)
         letter = (data[data.index(":") - 1])
-        password = data[-1:data.index(':'):-1]
-
+        password = data.split(" ")[2]
 
         if '-' == data[1]:
             minimum = int(data[0])
